@@ -93,7 +93,7 @@ def whatch_products():
     for product in inventory:
         print_row(
             product['producto'],
-            product['precio'],
+            f'${product['precio']:,.2f}',
             product['cantidad'],)
         
 def search_products():
